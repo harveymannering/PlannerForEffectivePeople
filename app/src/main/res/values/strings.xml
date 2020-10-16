@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Weekly Planner</string>
+
+    <!-- day names -->
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- bits and bobs -->
+    <string name="priorities">Priorities</string>
+    <string name="appointments">Appointments</string>
+    <string name="priority">Priority</string>
+    <string name="appointment">Appointment</string>
+    <string name="starts">Starts</string>
+    <string name="ends">Ends</string>
+    <string name="last">last</string>
+
+
+    <!-- settings page -->
+    <string name="settings">Settings</string>
+    <string name="showDates">Show Individual Dates</string>
+    <string name="dayRange">Select Planners Day Range:</string>
+    <string name="enableNotifications">Enable Notifications</string>
+    <string name="warningTime">Warning Time (Minutes):</string>
+
+    <!-- repeat tasks page -->
+    <string name="repeat">Repeat</string>
+    <string name="never">Never</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="custom">Custom</string>
+    <string name="every">Every</string>
+    <string name="day">day</string>
+    <string name="week">week</string>
+    <string name="month">month</string>
+    <string name="year">year</string>
+    <string name="day_plural">days</string>
+    <string name="week_plural">weeks</string>
+    <string name="month_plural">months</string>
+    <string name="year_plural">years</string>
+    <string name="after">After</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="repetition">repetition</string>
+    <string name="repetition_plural">repetitions</string>
+
+    <string-array name="colour_names">
+        <item>White</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Grey</item>
+        <item>Brown</item>
+        <item>Blue</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/txt_repeatition_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:text="@string/repeat"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRepetitionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp">
+
+            <RadioButton
+                android:id="@+id/radioNever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:text="@string/never"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:text="@string/daily" />
+
+            <RadioButton
+                android:id="@+id/radioWeekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:text="@string/weekly" />
+
+            <RadioButton
+                android:id="@+id/radioMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:text="@string/monthly" />
+
+            <RadioButton
+                android:id="@+id/radioYearly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:text="@string/yearly" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/seperator_1"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/inputTimePeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/txt_every"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text="@string/every"/>
+
+            <EditText
+                android:id="@+id/input_repeatition_interval"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="1"/>
+
+            <TextView
+                android:id="@+id/txt_repeatition_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text="@string/day"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputDayPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ToggleButton
+            android:id="@+id/tglMon"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/mon"
+            android:textOff="@string/mon" />
+        <ToggleButton
+            android:id="@+id/tglTue"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/tue"
+            android:textOff="@string/tue" />
+        <ToggleButton
+            android:id="@+id/tglWed"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/wed"
+            android:textOff="@string/wed" />
+        <ToggleButton
+            android:id="@+id/tglThu"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/thu"
+            android:textOff="@string/thu" />
+        <ToggleButton
+            android:id="@+id/tglFri"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/fri"
+            android:textOff="@string/fri" />
+        <ToggleButton
+            android:id="@+id/tglSat"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/sat"
+            android:textOff="@string/sat" />
+        <ToggleButton
+            android:id="@+id/tglSun"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_selector"
+            android:textOn="@string/sun"
+            android:textOff="@string/sun" />
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radGroupEveryXDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radEveryXDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every Xth Day"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radEveryXDayOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every Xth Day of the Week" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/seperator_2"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Switch
+            android:id="@+id/switch_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:text="@string/ends" />
+
+        <LinearLayout
+            android:id="@+id/inputEndsAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/txt_after"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text="@string/after"/>
+
+            <EditText
+                android:id="@+id/input_repeatition_number"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="10"/>
+
+            <TextView
+                android:id="@+id/txt_repeatition_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/repetition_plural"
+                android:textColor="#000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:text="@string/cancel" />
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
